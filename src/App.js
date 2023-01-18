@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Container from '@mui/material/Container'
 import Searcher from './containers/Searcher/Searcher';
-// import Box from '@mui/material/Box'
+import UserCard from './containers/userCard/UserCard';
+
 
 import getGitHubUser from './services/users';
 
@@ -26,11 +27,11 @@ function App() {
     } else {
       setUserState(userResponse)
     }
-    console.log('My userXXXX', userResponse)
-
-    console.log('userState interno >>>> ', userState)
+    // console.log('My userXXXX', userResponse)
   }
+
   console.log('userState >>>> ', userState)
+
   useEffect(() => {
     gettingUser(inputUser)
   }, [inputUser])
@@ -50,7 +51,12 @@ function App() {
           flexDirection:'column',
           alignItems: 'center'
            }}>
-        <Searcher inputUser={inputUser} setInputUser={setInputUser} />
+        <Searcher 
+          inputUser={inputUser} 
+          setInputUser={setInputUser} 
+        />
+        <UserCard userState={userState}/>
+        
       </Container>
      
     </div>
