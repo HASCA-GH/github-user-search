@@ -5,19 +5,18 @@ import React from 'react'
 const PrincipalInformation = ({userState}) => {
   return (
     <>
-    <Stack 
-         
-         justifyContent="flex-start"
-         alignItems="flex-start"
-    >
-        <Typography>Name: {userState.name}</Typography>
-        <Typography>Login: {userState.login}</Typography>
-        <Typography>Created at: {userState.created_at}</Typography>
-        <Typography>Followers {userState.followers}</Typography>
-        <Typography>Following {userState.following}</Typography>
-    </Stack>
+        <Stack 
+            direction="row"
+            sx={{justifyContent:'space-between'}}
+            // justifyContent="flex-start"
+            // alignItems="flex-start"
+        >
+            <Typography variant="h4">{userState.name}</Typography>
+            <Typography variant="subtitle2">{userState.created_at}</Typography>
+        </Stack>
+            <Typography variant="caption">@{userState.login}</Typography>
     </>
-  )
+  ) 
 }
 
 export default PrincipalInformation

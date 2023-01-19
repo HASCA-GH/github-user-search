@@ -41,9 +41,9 @@ function App() {
     <div className="App">
       Inicia aquí
       <Container 
-          maxWidth="sm"
+          maxWidth="lg"
           sx={{ bgcolor: 'whitesmoke', 
-          width: '80vh',
+          width: '100vh',
           height: '100vh',
           borderRadius: '16px', 
           marginTop: '40px',

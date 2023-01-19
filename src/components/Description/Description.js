@@ -9,11 +9,14 @@ const Description = ({userState}) => {
       <Stack
         //  justifyContent="flex-start"
         //  alignItems="flex-start"
-        sx={{textAlign: 'left'}}
+        sx={{
+          textAlign: 'left',
+          // justifyContent:'left'
+        }}
       >
         {userState.bio !== null 
-              ? <Typography>Bio: {userState.bio}</Typography>
-              : <Typography>Bio: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, voluptate.  </Typography>
+              ? <Typography variant="body1">{userState.bio}</Typography>
+              : <Typography variant="body1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, voluptate.  </Typography>
 
         }
       </Stack>

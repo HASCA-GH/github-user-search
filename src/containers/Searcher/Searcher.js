@@ -20,8 +20,9 @@ const Searcher = ({inputUser, setInputUser}) => {
     <Stack 
       direction= 'row'
       sx={{
-        marginTop: '30px',
-        width:'80%'
+        margin: '25px',
+        width:'100%',
+        // textAlign: 'left',
     }}> 
       <TextField
         id="outlined-basic"
