@@ -10,7 +10,7 @@ const PaperInformation = ({userState}) => {
                 <Typography>{userState.public_repos}</Typography>
                 <Typography>Followers</Typography>
                 <Typography>{userState.followers}</Typography>
-                <Typography>Foll    owing</Typography>
+                <Typography>Following</Typography>
                 <Typography>{userState.following}</Typography>
             </Stack>
         </Paper>
